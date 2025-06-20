@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.Scene3Controller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="617.0" layoutX="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@background3.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#8a939c" height="200.0" layoutX="222.0" layoutY="141.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label alignment="CENTER" layoutX="2.0" layoutY="14.0" prefHeight="44.0" prefWidth="610.0" text="GAME">
+         <font>
+            <Font name="Agency FB Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-4.0" layoutY="58.0" prefHeight="44.0" prefWidth="617.0" text="OVER !">
+         <font>
+            <Font name="Agency FB Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="290.0" layoutY="152.0" prefHeight="24.0" prefWidth="63.0" text="SCORE">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="253.0" prefHeight="26.0" prefWidth="108.0" text="HIGH SCORE">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView blendMode="DARKEN" fitHeight="44.0" fitWidth="40.0" layoutX="244.0" layoutY="344.0" onMouseClicked="#backToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@home.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="DARKEN" fitHeight="34.0" fitWidth="40.0" layoutX="343.0" layoutY="347.0" onMouseClicked="#restart" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@restart.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="myscore" layoutX="284.0" layoutY="191.0" prefHeight="18.0" prefWidth="75.0" style="-fx-background-color: #cc1c1c;" text="Score" textFill="WHITE" />
+      <Label layoutX="284.0" layoutY="290.0" prefHeight="18.0" prefWidth="75.0" style="-fx-background-color: #cc1c1c;" />
+   </children>
+</AnchorPane>
